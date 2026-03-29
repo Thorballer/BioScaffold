@@ -1,0 +1,1702 @@
+{
+  "generatedAt": "2026-03-29T18:50:57.555Z",
+  "totalQuestions": 106,
+  "questions": [
+    {
+      "id": "q1",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.1",
+      "themes": [],
+      "text": "Which statement best describes a fundamental principle of the cell theory?",
+      "options": [
+        "All living organisms are composed of one or more cells",
+        "All cells contain a membrane-bound nucleus",
+        "Cells can be created from non-living materials",
+        "All cells are capable of photosynthesis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cell theory states that all living organisms are composed of cells, cells are the basic unit of life, and all cells arise from pre-existing cells. Not all cells have a nucleus (prokaryotes lack one)."
+    },
+    {
+      "id": "q2",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.1",
+      "themes": [],
+      "text": "Which scientist is credited with first observing and naming \"cells\" after examining cork under a microscope?",
+      "options": [
+        "Robert Hooke",
+        "Anton van Leeuwenhoek",
+        "Matthias Schleiden",
+        "Rudolf Virchow"
+      ],
+      "correctAnswer": 0,
+      "explanation": "In 1665, Robert Hooke observed cork under a microscope and named the box-like structures \"cells\" because they reminded him of monastery rooms. Leeuwenhoek later observed living cells."
+    },
+    {
+      "id": "q3",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.1",
+      "themes": [],
+      "text": "Which component is NOT part of the modern cell theory?",
+      "options": [
+        "Cells can spontaneously generate from non-living matter",
+        "All living things are made of cells",
+        "Cells are the basic unit of structure and function in living things",
+        "All cells come from pre-existing cells"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The modern cell theory does not include spontaneous generation. This idea was disproven by experiments by Pasteur and others, showing that cells only arise from pre-existing cells."
+    },
+    {
+      "id": "q4",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.14.1",
+      "themes": [],
+      "text": "A scientist examines two different cell types under a microscope. Cell A has a defined nucleus and membrane-bound organelles. Cell B lacks a nucleus and has no membrane-bound organelles. Which conclusion is correct?",
+      "options": [
+        "Cell A is a eukaryote and Cell B is a prokaryote",
+        "Cell A is a prokaryote and Cell B is a eukaryote",
+        "Both cells are eukaryotic with different evolutionary stages",
+        "Both cells are prokaryotic with different sizes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Eukaryotic cells have a membrane-bound nucleus and organelles, while prokaryotic cells (bacteria and archaea) lack these features. The presence or absence of a nucleus is the key distinguishing feature."
+    },
+    {
+      "id": "q5",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.14.1",
+      "themes": [],
+      "text": "An experiment shows that a certain type of cell cannot be grown in culture unless it is placed in contact with other cells of the same type. This observation best supports which principle?",
+      "options": [
+        "Cells arise only from pre-existing cells",
+        "All cells require a nucleus",
+        "Cells can only survive in groups",
+        "All cells are identical in structure"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This observation supports the principle that cells come from pre-existing cells. Some cell types require signals from neighboring cells to divide and survive, demonstrating cell-to-cell communication and dependence."
+    },
+    {
+      "id": "q6",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "High",
+      "standard": "SC.912.L.14.1",
+      "themes": [],
+      "text": "Scientists discovered cells in the 1600s, but cell theory was not fully developed until the 1800s. Which technological advancement was most critical for completing cell theory?",
+      "options": [
+        "Improved microscope lenses that allowed observation of cell division and reproduction",
+        "The invention of the electron microscope",
+        "Development of DNA sequencing technology",
+        "Creation of computerized imaging systems"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Better microscopes in the 1800s allowed scientists like Schleiden, Schwann, and Virchow to observe cell division and establish that all cells come from pre-existing cells. This completed cell theory before electron microscopes existed."
+    },
+    {
+      "id": "q7",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "Which organelle is the site of protein synthesis in a cell?",
+      "options": [
+        "Ribosome",
+        "Mitochondria",
+        "Lysosome",
+        "Golgi apparatus"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Ribosomes are the cellular structures where proteins are synthesized. They translate messenger RNA (mRNA) into polypeptide chains that fold into functional proteins."
+    },
+    {
+      "id": "q8",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "Which organelle contains the cell's genetic material (DNA)?",
+      "options": [
+        "Nucleus",
+        "Ribosome",
+        "Vacuole",
+        "Lysosome"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The nucleus is the control center of eukaryotic cells, containing the cell's DNA and directing cellular activities including growth, metabolism, and reproduction."
+    },
+    {
+      "id": "q9",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "Which organelle is responsible for producing the majority of ATP through cellular respiration?",
+      "options": [
+        "Mitochondria",
+        "Chloroplast",
+        "Ribosome",
+        "Endoplasmic reticulum"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mitochondria are the \"powerhouses\" of the cell, generating ATP through aerobic cellular respiration. They have their own DNA and are believed to have originated from ancient bacteria."
+    },
+    {
+      "id": "q10",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "Which structure is found in plant cells but NOT in animal cells?",
+      "options": [
+        "Cell wall and chloroplasts",
+        "Nucleus and mitochondria",
+        "Ribosomes and lysosomes",
+        "Cell membrane and cytoplasm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Plant cells have a rigid cell wall for structural support and chloroplasts for photosynthesis. Animal cells lack both of these structures, though both cell types have nuclei, mitochondria, and ribosomes."
+    },
+    {
+      "id": "q11",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "What is the primary function of the cell membrane?",
+      "options": [
+        "To control what enters and exits the cell",
+        "To produce energy for the cell",
+        "To store genetic information",
+        "To synthesize proteins"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The cell membrane is a selectively permeable barrier that controls the movement of substances in and out of the cell. It is composed of a phospholipid bilayer with embedded proteins."
+    },
+    {
+      "id": "q12",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "A cell is observed to have a high concentration of rough endoplasmic reticulum and Golgi apparatus. What is the most likely function of this cell?",
+      "options": [
+        "Production and secretion of proteins",
+        "Storage of lipids",
+        "Generation of ATP through respiration",
+        "Breakdown of cellular waste"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Rough ER (studded with ribosomes) synthesizes proteins, and the Golgi apparatus modifies, sorts, and packages proteins for secretion. Cells with abundant rough ER and Golgi are typically gland cells that produce protein hormones or enzymes."
+    },
+    {
+      "id": "q13",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "A student examines a cell and observes many lysosomes. What is the most likely function of this cell?",
+      "options": [
+        "Breaking down waste materials and cellular debris",
+        "Synthesizing large amounts of protein",
+        "Producing energy through photosynthesis",
+        "Rapidly dividing for growth"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lysosomes contain digestive enzymes that break down waste materials, cellular debris, and foreign invaders. Cells with many lysosomes often have roles in immune defense or cellular cleanup."
+    },
+    {
+      "id": "q14",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "Which sequence correctly describes the path of a protein from synthesis to secretion from the cell?",
+      "options": [
+        "Ribosome → Rough ER → Golgi apparatus → Vesicle → Cell membrane",
+        "Nucleus → Golgi → Ribosome → Cell membrane",
+        "Mitochondria → ER → Lysosome → Outside",
+        "Golgi → Ribosome → Nucleus → ER"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proteins destined for secretion are synthesized at ribosomes, modified in the rough ER, further processed and packaged in the Golgi, transported in vesicles to the cell membrane, and released via exocytosis."
+    },
+    {
+      "id": "q15",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "A cell has malfunctioning mitochondria. Which cellular process would be most directly affected?",
+      "options": [
+        "Aerobic cellular respiration and ATP production",
+        "Protein synthesis",
+        "Photosynthesis",
+        "DNA replication"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mitochondria are the primary sites of aerobic cellular respiration, producing most of the cell's ATP. Malfunctioning mitochondria would significantly reduce energy production, affecting many cellular processes."
+    },
+    {
+      "id": "q16",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "High",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "A researcher treats a cell with a chemical that disrupts the nuclear envelope. Which cellular process would be most immediately affected?",
+      "options": [
+        "Transport of mRNA from nucleus to cytoplasm for protein synthesis",
+        "ATP production in mitochondria",
+        "Breakdown of waste in lysosomes",
+        "Protein synthesis at ribosomes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The nuclear envelope separates the nucleus from the cytoplasm. If disrupted, mRNA cannot properly exit the nucleus to reach ribosomes, preventing gene expression and protein synthesis. ATP production and protein synthesis at existing ribosomes could continue briefly."
+    },
+    {
+      "id": "q17",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "High",
+      "standard": "SC.912.L.14.3",
+      "themes": [],
+      "text": "Some cells have large numbers of mitochondria while others have very few. Which type of cell would you expect to have the MOST mitochondria?",
+      "options": [
+        "Cardiac muscle cells that contract continuously",
+        "Fat storage cells with large lipid droplets",
+        "Red blood cells that transport oxygen",
+        "Skin cells that form a protective barrier"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cardiac muscle cells require constant ATP for continuous contraction and cannot tolerate interruptions in energy supply. They contain abundant mitochondria (25-35% of cell volume) to maintain high rates of aerobic respiration."
+    },
+    {
+      "id": "q18",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.7",
+      "themes": [],
+      "text": "What type of transport moves molecules from an area of high concentration to low concentration WITHOUT using energy?",
+      "options": [
+        "Passive transport",
+        "Active transport",
+        "Endocytosis",
+        "Exocytosis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Passive transport moves molecules down their concentration gradient (high to low concentration) without requiring ATP energy. Examples include diffusion, osmosis, and facilitated diffusion."
+    },
+    {
+      "id": "q19",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.7",
+      "themes": [],
+      "text": "What is the movement of WATER across a selectively permeable membrane called?",
+      "options": [
+        "Osmosis",
+        "Diffusion",
+        "Active transport",
+        "Endocytosis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Osmosis is the specific term for water movement across a selectively permeable membrane from an area of lower solute concentration to higher solute concentration."
+    },
+    {
+      "id": "q20",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.14.7",
+      "themes": [],
+      "text": "Which process requires energy (ATP) to move molecules AGAINST their concentration gradient?",
+      "options": [
+        "Active transport",
+        "Diffusion",
+        "Osmosis",
+        "Facilitated diffusion"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Active transport uses ATP energy to move molecules against their concentration gradient (from low to high concentration). The sodium-potassium pump is a classic example."
+    },
+    {
+      "id": "q21",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.14.7",
+      "themes": [],
+      "text": "A red blood cell is placed in distilled water. What will happen to the cell and why?",
+      "options": [
+        "The cell will swell and possibly burst because water enters by osmosis",
+        "The cell will shrink because water leaves the cell",
+        "The cell will remain unchanged because it has a cell wall",
+        "The cell will actively pump water out"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Distilled water is hypotonic to the red blood cell's cytoplasm. Water moves INTO the cell by osmosis, causing it to swell. Without a cell wall, red blood cells can burst (lyse) in hypotonic solutions."
+    },
+    {
+      "id": "q22",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.14.7",
+      "themes": [],
+      "text": "A plant cell is placed in a concentrated salt solution. What will happen to the cell?",
+      "options": [
+        "The cell membrane will shrink away from the cell wall (plasmolysis)",
+        "The cell will swell and become turgid",
+        "The cell will burst due to water entering",
+        "No change will occur"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The salt solution is hypertonic. Water leaves the plant cell by osmosis, causing the central vacuole to shrink and the cell membrane to pull away from the cell wall. This process is called plasmolysis."
+    },
+    {
+      "id": "q23",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.14.7",
+      "themes": [],
+      "text": "A student places an Elodea leaf cell in three different solutions. In Solution A, the cell appears normal. In Solution B, the central vacuole shrinks. In Solution C, the cell becomes very turgid (swollen). Which solution is hypertonic to the cell?",
+      "options": [
+        "Solution B only",
+        "Solution A only",
+        "Solution C only",
+        "Both A and C"
+      ],
+      "correctAnswer": 0,
+      "explanation": "In a hypertonic solution, water leaves the cell, causing the central vacuole to shrink. Solution B shows this effect. Solution A is isotonic (no change), and Solution C is hypotonic (water enters, causing turgidity)."
+    },
+    {
+      "id": "q24",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.14.7",
+      "themes": [],
+      "text": "Why can't a cell maintain normal function if the sodium-potassium pump stops working?",
+      "options": [
+        "The cell cannot maintain proper ion gradients essential for nerve impulses and cellular functions",
+        "Protein synthesis would stop immediately",
+        "Photosynthesis would cease",
+        "DNA replication would be blocked"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The sodium-potassium pump maintains the electrochemical gradient essential for nerve impulse transmission, muscle contraction, and secondary active transport. Without it, cells cannot maintain proper membrane potential or nutrient uptake."
+    },
+    {
+      "id": "q25",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "High",
+      "standard": "SC.912.L.14.7",
+      "themes": [],
+      "text": "A researcher is studying a cell that constantly pumps hydrogen ions (H+) out of its cytoplasm. What does this indicate about the cell's environment?",
+      "options": [
+        "The external environment is more acidic than the cytoplasm, and the cell uses active transport to maintain pH homeostasis",
+        "The external environment is more basic than the cytoplasm",
+        "The cell is undergoing passive transport only",
+        "H+ ions are moving by simple diffusion"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Pumping H+ out requires active transport (going against the gradient), indicating the external environment has a higher H+ concentration (is more acidic). Cells must expend energy to maintain internal pH homeostasis."
+    },
+    {
+      "id": "q26",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "High",
+      "standard": "SC.912.L.14.7",
+      "themes": [],
+      "text": "A patient has a genetic disorder that impairs the function of their carrier proteins in cell membranes. Which symptom would most likely result from this disorder?",
+      "options": [
+        "Inability to transport certain molecules across cell membranes, affecting nutrient absorption",
+        "Increased ATP production",
+        "Enhanced passive diffusion of all molecules",
+        "Strengthened cell wall structure"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Carrier proteins facilitate the transport of specific molecules (like glucose, amino acids) across membranes. Without functional carriers, cells cannot efficiently absorb these essential nutrients, leading to malnutrition and other health problems."
+    },
+    {
+      "id": "q27",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "Which macromolecule is the primary source of QUICK energy for living organisms?",
+      "options": [
+        "Carbohydrates",
+        "Proteins",
+        "Lipids",
+        "Nucleic acids"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Carbohydrates, especially simple sugars like glucose, provide quick energy through cellular respiration. Glucose can be rapidly metabolized to produce ATP."
+    },
+    {
+      "id": "q28",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "Which macromolecule provides LONG-TERM energy storage and insulation?",
+      "options": [
+        "Lipids (fats)",
+        "Carbohydrates",
+        "Proteins",
+        "Nucleic acids"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lipids store more energy per gram than carbohydrates and provide long-term energy storage in the form of fats. They also provide insulation and protection for organs."
+    },
+    {
+      "id": "q29",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "Which macromolecule is primarily responsible for growth and repair of tissues?",
+      "options": [
+        "Proteins",
+        "Carbohydrates",
+        "Lipids",
+        "Nucleic acids"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Proteins are the building blocks of tissues. They form structural components (collagen, keratin), enzymes, hormones, and antibodies, all essential for growth and repair."
+    },
+    {
+      "id": "q30",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "Which macromolecule stores and transmits genetic information?",
+      "options": [
+        "Nucleic acids (DNA and RNA)",
+        "Proteins",
+        "Carbohydrates",
+        "Lipids"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Nucleic acids, specifically DNA and RNA, store and transmit genetic information. DNA contains the instructions for building all proteins, while RNA helps carry out these instructions."
+    },
+    {
+      "id": "q31",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "Enzymes belong to which class of macromolecules?",
+      "options": [
+        "Proteins",
+        "Carbohydrates",
+        "Lipids",
+        "Nucleic acids"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Enzymes are proteins that act as biological catalysts. Their specific 3D structure allows them to bind to substrates and speed up chemical reactions without being consumed."
+    },
+    {
+      "id": "q32",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "A student tests an unknown food sample with Benedict's solution and observes a color change from blue to orange. What does this indicate?",
+      "options": [
+        "The sample contains simple sugars (reducing sugars)",
+        "The sample contains proteins",
+        "The sample contains lipids",
+        "The sample contains starch"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Benedict's solution tests for reducing sugars (simple sugars like glucose and fructose). A positive test changes from blue to green, yellow, orange, or brick red depending on sugar concentration."
+    },
+    {
+      "id": "q33",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "A student tests a food sample with iodine and observes a color change from brown to dark blue/black. What macromolecule is present?",
+      "options": [
+        "Starch (a complex carbohydrate)",
+        "Protein",
+        "Lipid",
+        "Simple sugar"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Iodine is used to test for starch. When iodine binds to the helical structure of starch molecules, it turns dark blue or black, indicating the presence of this complex carbohydrate."
+    },
+    {
+      "id": "q34",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "An athlete wants to maximize glycogen storage before a marathon. Which food should they consume in the days leading up to the race?",
+      "options": [
+        "Pasta and rice (complex carbohydrates)",
+        "Steak and chicken (proteins)",
+        "Olive oil and nuts (lipids)",
+        "Fruits and vegetables only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Complex carbohydrates like pasta and rice are broken down into glucose, which is stored as glycogen in muscles and liver. This glycogen serves as an energy reserve during prolonged exercise."
+    },
+    {
+      "id": "q35",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "Why is it important to include essential amino acids in the human diet?",
+      "options": [
+        "Humans cannot synthesize these amino acids and must obtain them from food",
+        "They provide the most energy of all nutrients",
+        "They are the only amino acids used for energy",
+        "They are only found in animal products"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Essential amino acids cannot be synthesized by the human body and must be obtained from dietary sources. Complete proteins contain all essential amino acids, while incomplete proteins lack one or more."
+    },
+    {
+      "id": "q36",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "High",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "A protein is denatured when exposed to high temperature. Which statement best explains what happened to the protein?",
+      "options": [
+        "The hydrogen bonds and other weak interactions were disrupted, causing loss of the protein's 3D structure",
+        "The protein's amino acid sequence was permanently changed",
+        "The protein was broken down into individual amino acids",
+        "The protein became a carbohydrate"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Denaturation disrupts the weak bonds (hydrogen bonds, ionic bonds, hydrophobic interactions) that maintain a protein's 3D shape. The primary structure (amino acid sequence) remains intact, but the protein loses its functional shape."
+    },
+    {
+      "id": "q37",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "High",
+      "standard": "SC.912.L.18.1",
+      "themes": [],
+      "text": "A patient has a condition where their cells cannot properly metabolize fatty acids for energy. During fasting, which symptom would most likely occur?",
+      "options": [
+        "Severe fatigue and low blood sugar due to inability to access fat stores for energy",
+        "Weight gain from excess fat storage",
+        "Improved athletic performance",
+        "Increased protein synthesis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "During fasting, the body normally breaks down stored fats for energy. If fatty acid metabolism is impaired, the body cannot access this energy reserve, leading to low blood sugar, fatigue, and reliance on protein breakdown for energy."
+    },
+    {
+      "id": "q38",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.18.12",
+      "themes": [],
+      "text": "What property of water allows it to dissolve many substances?",
+      "options": [
+        "Water is a polar molecule that can form hydrogen bonds",
+        "Water is nonpolar and repels other substances",
+        "Water has a neutral pH",
+        "Water has a low specific heat"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Water's polarity allows it to form hydrogen bonds with other polar molecules, making it an excellent solvent. This is why water is called the \"universal solvent\" and is essential for biological processes."
+    },
+    {
+      "id": "q39",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.18.12",
+      "themes": [],
+      "text": "What is the pH of a neutral solution?",
+      "options": [
+        "7",
+        "0",
+        "14",
+        "1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A pH of 7 is neutral, meaning the concentration of hydrogen ions equals the concentration of hydroxide ions. Pure water has a pH of 7 at 25°C."
+    },
+    {
+      "id": "q40",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.18.12",
+      "themes": [],
+      "text": "Which pH value indicates the MOST acidic solution?",
+      "options": [
+        "2",
+        "7",
+        "10",
+        "14"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The pH scale ranges from 0 to 14, with lower numbers being more acidic. A pH of 2 indicates a high concentration of hydrogen ions (H+), making it strongly acidic."
+    },
+    {
+      "id": "q41",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Low",
+      "standard": "SC.912.L.18.12",
+      "themes": [],
+      "text": "Which property of water helps organisms maintain stable body temperatures?",
+      "options": [
+        "High specific heat (ability to absorb heat with little temperature change)",
+        "Low density as a solid",
+        "Surface tension",
+        "Ability to dissolve substances"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Water's high specific heat allows it to absorb or release large amounts of energy with only small temperature changes. This helps organisms maintain stable internal temperatures despite external fluctuations."
+    },
+    {
+      "id": "q42",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.18.12",
+      "themes": [],
+      "text": "A solution has a pH of 3. How does its hydrogen ion concentration compare to a solution with a pH of 6?",
+      "options": [
+        "The pH 3 solution has 1,000 times more hydrogen ions than the pH 6 solution",
+        "The pH 3 solution has 3 times more hydrogen ions",
+        "The pH 3 solution has fewer hydrogen ions",
+        "Both solutions have the same hydrogen ion concentration"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Each pH unit represents a 10-fold difference in hydrogen ion concentration. From pH 6 to pH 3 is a difference of 3 units, meaning 10³ = 1,000 times more H+ ions at pH 3."
+    },
+    {
+      "id": "q43",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.18.12",
+      "themes": [],
+      "text": "Why are buffers important in biological systems?",
+      "options": [
+        "Buffers help maintain stable pH by resisting changes when acids or bases are added",
+        "Buffers increase the pH of solutions",
+        "Buffers break down proteins",
+        "Buffers prevent all chemical reactions"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Buffers are solutions that resist changes in pH when small amounts of acid or base are added. They are crucial in biological systems to maintain the narrow pH ranges required for enzyme function and cellular processes."
+    },
+    {
+      "id": "q44",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.18.12",
+      "themes": [],
+      "text": "A lake has become acidified due to acid rain, with the pH dropping from 7 to 5. Which organism would be most affected?",
+      "options": [
+        "Fish species that require a narrow pH range for survival",
+        "All organisms would be equally affected",
+        "Plants growing near the lake",
+        "No organisms would be affected"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Many aquatic organisms, especially fish, are highly sensitive to pH changes. A drop from pH 7 to pH 5 represents a 100-fold increase in acidity, which can disrupt enzyme function, gill function, and reproduction in sensitive species."
+    },
+    {
+      "id": "q45",
+      "category": "Molecular and Cellular Biology",
+      "difficulty": "High",
+      "standard": "SC.912.L.18.12",
+      "themes": [],
+      "text": "Blood has a pH of approximately 7.4. If a patient's blood pH drops to 7.1, which statement best describes this condition?",
+      "options": [
+        "The patient has acidosis, a potentially life-threatening condition where blood is too acidic",
+        "The patient has alkalosis, where blood is too basic",
+        "The change is insignificant and within normal range",
+        "The patient's blood pH has increased"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Normal blood pH is 7.35-7.45. A pH of 7.1 is below this range and indicates acidosis. Even small changes in blood pH can be dangerous because enzymes and cellular processes require very specific pH ranges."
+    },
+    {
+      "id": "q46",
+      "category": "Genetics and Heredity",
+      "difficulty": "Low",
+      "standard": "SC.912.L.16.1",
+      "themes": [],
+      "text": "In Mendel's experiments, what did he call the trait that appeared in the first generation (F1) when crossing two purebred plants?",
+      "options": [
+        "Dominant trait",
+        "Recessive trait",
+        "Mutation",
+        "Incomplete dominance"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mendel called the trait that appeared in the F1 generation \"dominant\" because it masked the expression of the other trait, which he called \"recessive.\" This became the foundation of Mendelian genetics."
+    },
+    {
+      "id": "q47",
+      "category": "Genetics and Heredity",
+      "difficulty": "Low",
+      "standard": "SC.912.L.16.1",
+      "themes": [],
+      "text": "What is a Punnett square used for?",
+      "options": [
+        "To predict the possible genotypes of offspring from a genetic cross",
+        "To determine the age of an organism",
+        "To identify mutations in DNA",
+        "To measure protein synthesis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A Punnett square is a diagram used to predict the genetic outcomes of a cross. It shows all possible combinations of alleles from the parents and their probability in the offspring."
+    },
+    {
+      "id": "q48",
+      "category": "Genetics and Heredity",
+      "difficulty": "Low",
+      "standard": "SC.912.L.16.1",
+      "themes": [],
+      "text": "If an organism has two identical alleles for a trait (e.g., BB or bb), what is its genotype called?",
+      "options": [
+        "Homozygous",
+        "Heterozygous",
+        "Dominant",
+        "Recessive"
+      ],
+      "correctAnswer": 0,
+      "explanation": "When an organism has two identical alleles for a gene (BB or bb), it is homozygous for that trait. If it has two different alleles (Bb), it is heterozygous."
+    },
+    {
+      "id": "q49",
+      "category": "Genetics and Heredity",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.16.1",
+      "themes": [],
+      "text": "In pea plants, tall (T) is dominant over short (t). If two heterozygous tall plants (Tt) are crossed, what percentage of the offspring will be short?",
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "0%"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Crossing Tt × Tt produces genotypes: 25% TT, 50% Tt, and 25% tt. Only the tt genotype (25%) results in short plants because short is recessive."
+    },
+    {
+      "id": "q50",
+      "category": "Genetics and Heredity",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.16.1",
+      "themes": [],
+      "text": "In guinea pigs, black fur (B) is dominant over white fur (b). If a black guinea pig mates with a white guinea pig and produces both black and white offspring, what is the genotype of the black parent?",
+      "options": [
+        "Heterozygous (Bb)",
+        "Homozygous dominant (BB)",
+        "Homozygous recessive (bb)",
+        "Cannot be determined"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Since some offspring are white (bb), they must have received a recessive allele from each parent. This means the black parent must carry a recessive allele (Bb). A BB parent could only produce black offspring."
+    },
+    {
+      "id": "q51",
+      "category": "Genetics and Heredity",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.16.1",
+      "themes": [],
+      "text": "In humans, attached earlobes are recessive (e) and free earlobes are dominant (E). A man with attached earlobes marries a woman with free earlobes. They have a child with attached earlobes. What is the mother's genotype?",
+      "options": [
+        "Heterozygous (Ee)",
+        "Homozygous dominant (EE)",
+        "Homozygous recessive (ee)",
+        "Cannot be determined"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The father must be ee (attached earlobes). For the child to have attached earlobes (ee), the mother must have contributed a recessive allele. Since she has free earlobes, she must be Ee (heterozygous)."
+    },
+    {
+      "id": "q52",
+      "category": "Genetics and Heredity",
+      "difficulty": "High",
+      "standard": "SC.912.L.16.1",
+      "themes": [],
+      "text": "In a certain plant, flower color is determined by incomplete dominance. Red (RR) and white (WW) flowers produce pink (RW) offspring. If two pink-flowered plants are crossed, what is the expected phenotypic ratio?",
+      "options": [
+        "1 red : 2 pink : 1 white",
+        "3 red : 1 white",
+        "All pink",
+        "1 red : 1 white"
+      ],
+      "correctAnswer": 0,
+      "explanation": "In incomplete dominance, crossing RW × RW produces 25% RR (red), 50% RW (pink), and 25% WW (white). The phenotypic ratio is 1:2:1 because heterozygotes show an intermediate phenotype."
+    },
+    {
+      "id": "q53",
+      "category": "Genetics and Heredity",
+      "difficulty": "High",
+      "standard": "SC.912.L.16.1",
+      "themes": [],
+      "text": "In humans, blood type is determined by multiple alleles (IA, IB, i). A person with type A blood and a person with type B blood have a child with type O blood. Which statement about the parents' genotypes is correct?",
+      "options": [
+        "Both parents must be heterozygous (IAi and IBi)",
+        "One parent must be homozygous",
+        "Both parents must be homozygous",
+        "This is impossible; type O cannot come from these parents"
+      ],
+      "correctAnswer": 0,
+      "explanation": "For a child to have type O blood (ii), both parents must contribute an i allele. Since both parents have A and B blood types, they must both be heterozygous: IAi (type A) and IBi (type B)."
+    },
+    {
+      "id": "q54",
+      "category": "Genetics and Heredity",
+      "difficulty": "Low",
+      "standard": "SC.912.L.16.3",
+      "themes": [],
+      "text": "What is the shape of a DNA molecule called?",
+      "options": [
+        "Double helix",
+        "Single strand",
+        "Triple helix",
+        "Circular ring"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DNA has a double helix shape, resembling a twisted ladder. The two strands run in opposite directions (antiparallel) and are held together by hydrogen bonds between complementary base pairs."
+    },
+    {
+      "id": "q55",
+      "category": "Genetics and Heredity",
+      "difficulty": "Low",
+      "standard": "SC.912.L.16.3",
+      "themes": [],
+      "text": "Which bases pair together in DNA?",
+      "options": [
+        "Adenine pairs with Thymine; Guanine pairs with Cytosine",
+        "Adenine pairs with Guanine; Thymine pairs with Cytosine",
+        "All bases can pair with any other base",
+        "Adenine pairs with Cytosine; Guanine pairs with Thymine"
+      ],
+      "correctAnswer": 0,
+      "explanation": "In DNA, complementary base pairing follows the rule: A-T and G-C. Adenine always pairs with Thymine (2 hydrogen bonds), and Guanine always pairs with Cytosine (3 hydrogen bonds)."
+    },
+    {
+      "id": "q56",
+      "category": "Genetics and Heredity",
+      "difficulty": "Low",
+      "standard": "SC.912.L.16.3",
+      "themes": [],
+      "text": "What is the function of DNA replication?",
+      "options": [
+        "To make an exact copy of DNA before cell division",
+        "To produce proteins",
+        "To break down old DNA",
+        "To convert DNA to RNA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DNA replication creates an identical copy of the DNA molecule before a cell divides. This ensures that each daughter cell receives a complete set of genetic instructions."
+    },
+    {
+      "id": "q57",
+      "category": "Genetics and Heredity",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.16.3",
+      "themes": [],
+      "text": "During DNA replication, what is the role of DNA polymerase?",
+      "options": [
+        "To add nucleotides to the growing DNA strand in the 5' to 3' direction",
+        "To break hydrogen bonds between the two DNA strands",
+        "To remove incorrect nucleotides",
+        "To join DNA fragments"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DNA polymerase is the primary enzyme that adds complementary nucleotides to the growing DNA strand. It can only add nucleotides in the 5' to 3' direction and proofreads for errors."
+    },
+    {
+      "id": "q58",
+      "category": "Genetics and Heredity",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.16.3",
+      "themes": [],
+      "text": "Why is DNA replication described as \"semi-conservative\"?",
+      "options": [
+        "Each new DNA molecule contains one original strand and one newly synthesized strand",
+        "Half of the DNA is conserved and half is destroyed",
+        "Only one strand is replicated",
+        "Each new DNA molecule contains two completely new strands"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Semi-conservative replication means that each daughter DNA molecule contains one strand from the original (parent) molecule and one newly synthesized strand. This was confirmed by the Meselson-Stahl experiment."
+    },
+    {
+      "id": "q59",
+      "category": "Genetics and Heredity",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.16.3",
+      "themes": [],
+      "text": "On one strand of DNA, the sequence is 5'-ATGCGA-3'. What is the complementary sequence on the other strand?",
+      "options": [
+        "3'-TACGCT-5'",
+        "5'-ATGCGA-3'",
+        "3'-AUGCGA-5'",
+        "5'-UACGCU-3'"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DNA strands are complementary and antiparallel. A pairs with T, T pairs with A, G pairs with C, C pairs with G. The complementary strand runs in the opposite direction (3' to 5')."
+    },
+    {
+      "id": "q60",
+      "category": "Genetics and Heredity",
+      "difficulty": "High",
+      "standard": "SC.912.L.16.3",
+      "themes": [],
+      "text": "During DNA replication, the leading strand is synthesized continuously, while the lagging strand is synthesized in fragments called Okazaki fragments. Why is this necessary?",
+      "options": [
+        "DNA polymerase can only synthesize DNA in the 5' to 3' direction, so the lagging strand must be made in short segments",
+        "The lagging strand contains more errors",
+        "The leading strand is more important",
+        "The lagging strand is shorter"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DNA polymerase can only add nucleotides in the 5' to 3' direction. Since the two DNA strands run antiparallel, the lagging strand must be synthesized in short segments (Okazaki fragments) that are later joined together."
+    },
+    {
+      "id": "q61",
+      "category": "Genetics and Heredity",
+      "difficulty": "Low",
+      "standard": "SC.912.L.16.17",
+      "themes": [],
+      "text": "What is the purpose of meiosis?",
+      "options": [
+        "To produce gametes (sex cells) with half the chromosome number",
+        "To produce identical body cells",
+        "To repair damaged tissues",
+        "To grow larger"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Meiosis is a specialized cell division that produces gametes (sperm and egg cells) with half the normal chromosome number. This ensures that when fertilization occurs, the offspring have the correct chromosome number."
+    },
+    {
+      "id": "q62",
+      "category": "Genetics and Heredity",
+      "difficulty": "Low",
+      "standard": "SC.912.L.16.17",
+      "themes": [],
+      "text": "How many divisions occur in meiosis?",
+      "options": [
+        "Two divisions (Meiosis I and Meiosis II)",
+        "One division",
+        "Three divisions",
+        "Four divisions"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Meiosis consists of two consecutive divisions: Meiosis I separates homologous chromosomes, and Meiosis II separates sister chromatids. This produces four haploid cells from one diploid cell."
+    },
+    {
+      "id": "q63",
+      "category": "Genetics and Heredity",
+      "difficulty": "Low",
+      "standard": "SC.912.L.16.17",
+      "themes": [],
+      "text": "In humans, how many chromosomes are in a typical body cell versus a gamete?",
+      "options": [
+        "46 chromosomes in body cells; 23 in gametes",
+        "23 in body cells; 46 in gametes",
+        "46 in both types",
+        "23 in both types"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Human body (somatic) cells are diploid with 46 chromosomes (23 pairs). Gametes are haploid with 23 chromosomes (one from each pair), produced by meiosis."
+    },
+    {
+      "id": "q64",
+      "category": "Genetics and Heredity",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.16.17",
+      "themes": [],
+      "text": "Crossing over occurs during which phase of meiosis?",
+      "options": [
+        "Prophase I",
+        "Metaphase I",
+        "Anaphase II",
+        "Telophase II"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Crossing over (exchange of genetic material between homologous chromosomes) occurs during Prophase I of meiosis. This process creates new combinations of alleles and increases genetic variation."
+    },
+    {
+      "id": "q65",
+      "category": "Genetics and Heredity",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.16.17",
+      "themes": [],
+      "text": "How does meiosis contribute to genetic variation in offspring?",
+      "options": [
+        "Through crossing over, independent assortment, and random fertilization",
+        "By producing identical cells",
+        "By preventing mutations",
+        "By reducing chromosome number only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Meiosis creates genetic variation through: (1) crossing over during Prophase I, (2) independent assortment of chromosomes during Metaphase I, and (3) random fertilization of gametes."
+    },
+    {
+      "id": "q66",
+      "category": "Genetics and Heredity",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.16.17",
+      "themes": [],
+      "text": "A cell has 10 chromosomes (5 pairs). After meiosis, how many chromosomes will be in each gamete?",
+      "options": [
+        "5 chromosomes",
+        "10 chromosomes",
+        "20 chromosomes",
+        "2 chromosomes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Meiosis reduces the chromosome number by half. If the parent cell has 10 chromosomes (diploid), each gamete will have 5 chromosomes (haploid)."
+    },
+    {
+      "id": "q67",
+      "category": "Genetics and Heredity",
+      "difficulty": "High",
+      "standard": "SC.912.L.16.17",
+      "themes": [],
+      "text": "Nondisjunction occurs when homologous chromosomes fail to separate properly during meiosis. What condition results if nondisjunction of chromosome 21 occurs during meiosis I?",
+      "options": [
+        "Down syndrome (trisomy 21)",
+        "Cystic fibrosis",
+        "Hemophilia",
+        "Turner syndrome"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Nondisjunction of chromosome 21 results in gametes with an extra chromosome 21. When fertilized, the resulting zygote has three copies of chromosome 21 (trisomy 21), causing Down syndrome."
+    },
+    {
+      "id": "q68",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Low",
+      "standard": "SC.912.L.15.1",
+      "themes": [],
+      "text": "What is natural selection?",
+      "options": [
+        "The process where organisms with favorable traits survive and reproduce more successfully",
+        "Random selection of organisms to survive",
+        "Human breeding of organisms for desired traits",
+        "The elimination of all weak organisms"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Natural selection is the mechanism of evolution proposed by Darwin. Organisms with traits better suited to their environment survive at higher rates and pass those advantageous traits to their offspring."
+    },
+    {
+      "id": "q69",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Low",
+      "standard": "SC.912.L.15.1",
+      "themes": [],
+      "text": "Which type of evidence supports the theory of evolution?",
+      "options": [
+        "Fossil record, comparative anatomy, and molecular biology",
+        "Only direct observation of evolution",
+        "Only computer simulations",
+        "No evidence supports evolution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Multiple lines of evidence support evolution: the fossil record shows change over time, comparative anatomy reveals homologous structures, and molecular biology shows genetic similarities between related species."
+    },
+    {
+      "id": "q70",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Low",
+      "standard": "SC.912.L.15.1",
+      "themes": [],
+      "text": "What is an adaptation?",
+      "options": [
+        "A trait that improves an organism's ability to survive and reproduce in its environment",
+        "Any physical characteristic",
+        "A trait that makes organisms bigger",
+        "A learned behavior"
+      ],
+      "correctAnswer": 0,
+      "explanation": "An adaptation is a heritable trait that increases an organism's fitness (ability to survive and reproduce) in a particular environment. Adaptations arise through natural selection."
+    },
+    {
+      "id": "q71",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.15.1",
+      "themes": [],
+      "text": "A population of beetles lives on a dark-colored tree trunk. Dark-colored beetles are more common than light-colored beetles. What is the most likely explanation?",
+      "options": [
+        "Dark beetles are better camouflaged from predators, giving them higher survival rates",
+        "Dark beetles reproduce faster",
+        "Light beetles are more active",
+        "The environment randomly favors dark beetles"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This is an example of natural selection. Dark beetles are camouflaged on dark bark, so fewer are eaten by predators. They survive and reproduce more successfully, making the dark trait more common in the population."
+    },
+    {
+      "id": "q72",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.15.1",
+      "themes": [],
+      "text": "Fossil evidence shows that whales evolved from land-dwelling mammals. Which evidence would best support this transition?",
+      "options": [
+        "Fossils showing gradual changes from land mammals with legs to whales with flippers",
+        "All fossils look the same",
+        "No transitional fossils exist",
+        "Whales appeared suddenly in the fossil record"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Transitional fossils show intermediate forms between ancestors and descendants. Whale evolution is well-documented with fossils showing gradual changes: from walking mammals to amphibious forms to fully aquatic whales."
+    },
+    {
+      "id": "q73",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.15.1",
+      "themes": [],
+      "text": "Two species of desert mice live in different geographic regions but have similar adaptations for desert survival. What type of evolution does this represent?",
+      "options": [
+        "Convergent evolution",
+        "Divergent evolution",
+        "Coevolution",
+        "Genetic drift"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Convergent evolution occurs when unrelated species evolve similar traits due to similar environmental pressures. Desert mice in different regions evolved similar adaptations independently because they face similar challenges."
+    },
+    {
+      "id": "q74",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "High",
+      "standard": "SC.912.L.15.1",
+      "themes": [],
+      "text": "A population of insects is exposed to a pesticide. After several generations, most insects are resistant to the pesticide. Which statement best explains this?",
+      "options": [
+        "Insects with pre-existing resistance genes survived and reproduced, passing the trait to offspring",
+        "All insects developed resistance simultaneously",
+        "The pesticide caused mutations in all insects",
+        "Resistance was learned behavior"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Natural selection: some insects had random mutations providing resistance. When the pesticide was applied, resistant insects survived and reproduced, while susceptible ones died. Over generations, resistance became common in the population."
+    },
+    {
+      "id": "q75",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Low",
+      "standard": "SC.912.L.15.6",
+      "themes": [],
+      "text": "Which level of classification contains the MOST different types of organisms?",
+      "options": [
+        "Kingdom",
+        "Species",
+        "Genus",
+        "Family"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Kingdom is the broadest and most inclusive taxonomic level shown, containing the greatest diversity of organisms. Species is the most specific level, containing only organisms that can interbreed."
+    },
+    {
+      "id": "q76",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Low",
+      "standard": "SC.912.L.15.6",
+      "themes": [],
+      "text": "What is binomial nomenclature?",
+      "options": [
+        "A two-word naming system using genus and species",
+        "A naming system using only the family name",
+        "A system that names all organisms the same",
+        "A numbering system for organisms"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Binomial nomenclature, developed by Linnaeus, gives each organism a two-part scientific name: genus (capitalized) and species (lowercase). For example, Homo sapiens (humans)."
+    },
+    {
+      "id": "q77",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Low",
+      "standard": "SC.912.L.15.6",
+      "themes": [],
+      "text": "Humans belong to which domain?",
+      "options": [
+        "Eukarya",
+        "Bacteria",
+        "Archaea",
+        "Animalia"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Humans are eukaryotes (cells with a nucleus) and belong to Domain Eukarya. This domain includes all organisms with eukaryotic cells: animals, plants, fungi, and protists."
+    },
+    {
+      "id": "q78",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.15.6",
+      "themes": [],
+      "text": "A cladogram shows evolutionary relationships between species. What does a branch point (node) represent?",
+      "options": [
+        "A common ancestor shared by the species on the branches above it",
+        "A new species appearing",
+        "An extinction event",
+        "A random grouping"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Branch points (nodes) on a cladogram represent common ancestors. Each branch point shows where two lineages diverged from a shared ancestor, indicated by a shared derived characteristic."
+    },
+    {
+      "id": "q79",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.15.6",
+      "themes": [],
+      "text": "Which organisms would be MOST closely related based on their scientific names?",
+      "options": [
+        "Canis latrans and Canis lupus (same genus, different species)",
+        "Felis catus and Canis familiaris (different genera)",
+        "Panthera leo and Felis catus (same family, different genera)",
+        "All are equally related"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Organisms in the same genus are more closely related than those in different genera. Canis latrans (coyote) and Canis lupus (wolf) share a more recent common ancestor than organisms in different genera."
+    },
+    {
+      "id": "q80",
+      "category": "Classification, Heredity, and Evolution",
+      "difficulty": "High",
+      "standard": "SC.912.L.15.6",
+      "themes": [],
+      "text": "Scientists find a new organism. It has cell walls made of chitin and is heterotrophic. To which kingdom does it most likely belong?",
+      "options": [
+        "Fungi",
+        "Plantae",
+        "Animalia",
+        "Protista"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Organisms with cell walls made of chitin and that are heterotrophic (cannot make their own food) are classified as fungi. Plants have cellulose cell walls and are autotrophic; animals lack cell walls."
+    },
+    {
+      "id": "q81",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.5",
+      "themes": [],
+      "text": "What is symbiosis?",
+      "options": [
+        "A close, long-term relationship between two different species",
+        "A type of reproduction",
+        "A feeding relationship",
+        "A way organisms compete"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Symbiosis is a close, long-term biological interaction between two different species. The three main types are mutualism, commensalism, and parasitism."
+    },
+    {
+      "id": "q82",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.5",
+      "themes": [],
+      "text": "In mutualism, how do the interacting species benefit?",
+      "options": [
+        "Both species benefit",
+        "One benefits, one is harmed",
+        "One benefits, one is unaffected",
+        "Neither benefits"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mutualism is a symbiotic relationship where both species benefit. Examples include bees and flowers (bees get food, flowers get pollination) and clownfish and sea anemones."
+    },
+    {
+      "id": "q83",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.5",
+      "themes": [],
+      "text": "A tick feeds on a dog's blood, harming the dog. What type of symbiotic relationship is this?",
+      "options": [
+        "Parasitism",
+        "Mutualism",
+        "Commensalism",
+        "Competition"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Parasitism is a relationship where one organism (the parasite, like a tick) benefits while the other (the host, like the dog) is harmed. The parasite takes nutrients from the host."
+    },
+    {
+      "id": "q84",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.17.5",
+      "themes": [],
+      "text": "Clownfish live inside sea anemones. The clownfish is protected by the anemone's stinging tentacles (which don't harm it), and the clownfish attracts prey for the anemone. What type of symbiosis is this?",
+      "options": [
+        "Mutualism",
+        "Commensalism",
+        "Parasitism",
+        "Predation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This is mutualism: the clownfish gets protection from predators, and the anemone gets prey attracted by the clownfish. Both organisms benefit from the relationship."
+    },
+    {
+      "id": "q85",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.17.5",
+      "themes": [],
+      "text": "Barnacles attach to a whale's skin. The barnacles get a place to live and access to food, while the whale is not affected. What type of symbiosis is this?",
+      "options": [
+        "Commensalism",
+        "Mutualism",
+        "Parasitism",
+        "Competition"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Commensalism is a relationship where one organism benefits and the other is unaffected. The barnacles benefit, but the whale neither benefits nor is harmed significantly."
+    },
+    {
+      "id": "q86",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.17.5",
+      "themes": [],
+      "text": "Why are keystone species important in ecosystems?",
+      "options": [
+        "They have a disproportionately large effect on ecosystem structure relative to their abundance",
+        "They are the most common species",
+        "They are always predators",
+        "They are the largest organisms"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Keystone species have a large impact on ecosystem structure despite often being relatively rare. Removing a keystone species can cause dramatic ecosystem changes, like the collapse of entire food webs."
+    },
+    {
+      "id": "q87",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "High",
+      "standard": "SC.912.L.17.5",
+      "themes": [],
+      "text": "Sea otters are keystone species in Pacific kelp forests. They eat sea urchins, which eat kelp. What would happen if sea otters were removed from this ecosystem?",
+      "options": [
+        "Sea urchins would overpopulate and destroy kelp forests, reducing biodiversity",
+        "The ecosystem would remain stable",
+        "Kelp forests would grow larger",
+        "More species would move into the area"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Without sea otters, sea urchin populations would explode. Urchins eat kelp, so overpopulation would destroy kelp forests. This would eliminate habitat for many species, reducing overall biodiversity."
+    },
+    {
+      "id": "q88",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.9",
+      "themes": [],
+      "text": "In a food chain, which organism is typically a producer?",
+      "options": [
+        "Grass (plant)",
+        "Deer (herbivore)",
+        "Wolf (carnivore)",
+        "Fungi (decomposer)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Producers are autotrophs that make their own food through photosynthesis. Plants like grass convert sunlight into chemical energy stored in glucose, forming the base of most food chains."
+    },
+    {
+      "id": "q89",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.9",
+      "themes": [],
+      "text": "What is a consumer that eats both plants and animals called?",
+      "options": [
+        "Omnivore",
+        "Herbivore",
+        "Carnivore",
+        "Decomposer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Omnivores eat both plants and animals. Examples include humans, bears, and pigs. Herbivores eat only plants, carnivores eat only animals, and decomposers break down dead organic matter."
+    },
+    {
+      "id": "q90",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.9",
+      "themes": [],
+      "text": "Which organism breaks down dead organisms and returns nutrients to the ecosystem?",
+      "options": [
+        "Decomposer",
+        "Producer",
+        "Herbivore",
+        "Carnivore"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Decomposers like bacteria and fungi break down dead organisms and waste products, returning nutrients like carbon and nitrogen to the soil where they can be used by producers."
+    },
+    {
+      "id": "q91",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.17.9",
+      "themes": [],
+      "text": "In the food chain: grass → rabbit → snake → hawk, which organism is a secondary consumer?",
+      "options": [
+        "Snake",
+        "Grass",
+        "Rabbit",
+        "Hawk"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Secondary consumers eat primary consumers. Grass is the producer, rabbit is the primary consumer (eats grass), snake is the secondary consumer (eats rabbit), and hawk is the tertiary consumer."
+    },
+    {
+      "id": "q92",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.17.9",
+      "themes": [],
+      "text": "Approximately how much energy is transferred from one trophic level to the next in an ecosystem?",
+      "options": [
+        "About 10%",
+        "About 50%",
+        "About 90%",
+        "100%"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Only about 10% of energy is transferred between trophic levels. The other 90% is lost as heat, used for metabolic processes, or not consumed. This limits the length of food chains."
+    },
+    {
+      "id": "q93",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.17.9",
+      "themes": [],
+      "text": "Why are there usually fewer organisms at higher trophic levels (like top predators)?",
+      "options": [
+        "Less energy is available at higher trophic levels due to energy loss between levels",
+        "Predators are smaller organisms",
+        "There are always more predators than prey",
+        "Predators reproduce faster"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Energy decreases at each trophic level (10% rule). With less energy available, fewer organisms can be supported. This is why there are fewer wolves than deer, and fewer deer than plants."
+    },
+    {
+      "id": "q94",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "High",
+      "standard": "SC.912.L.17.9",
+      "themes": [],
+      "text": "A food web contains: grass, rabbits, mice, snakes, hawks, and foxes. If all snakes are removed from the ecosystem, what is the most likely immediate effect?",
+      "options": [
+        "Rabbit and mouse populations would increase; hawk and fox populations would decrease",
+        "All populations would stay the same",
+        "Grass population would decrease immediately",
+        "All populations would increase"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Snakes are predators of mice and rabbits. Removing snakes removes predation pressure, so prey populations increase. Hawks lose a food source, potentially decreasing. Foxes might eat more mice, but overall ecosystem balance is disrupted."
+    },
+    {
+      "id": "q95",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.11",
+      "themes": [],
+      "text": "Which process in the water cycle involves water vapor cooling and turning into liquid water?",
+      "options": [
+        "Condensation",
+        "Evaporation",
+        "Precipitation",
+        "Transpiration"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Condensation is when water vapor (gas) cools and changes into liquid water droplets. This process forms clouds. Evaporation is the opposite—liquid to gas."
+    },
+    {
+      "id": "q96",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.11",
+      "themes": [],
+      "text": "Which gas do plants absorb from the atmosphere during photosynthesis?",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "correctAnswer": 0,
+      "explanation": "During photosynthesis, plants absorb carbon dioxide (CO₂) from the atmosphere and use the carbon to build glucose. They release oxygen as a byproduct."
+    },
+    {
+      "id": "q97",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.11",
+      "themes": [],
+      "text": "What process returns carbon dioxide to the atmosphere?",
+      "options": [
+        "Cellular respiration and decomposition",
+        "Photosynthesis",
+        "Nitrogen fixation",
+        "Evaporation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cellular respiration by organisms releases CO₂ when glucose is broken down for energy. Decomposition by bacteria and fungi also releases CO₂ from dead organic matter."
+    },
+    {
+      "id": "q98",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.17.11",
+      "themes": [],
+      "text": "Why are bacteria essential to the nitrogen cycle?",
+      "options": [
+        "They convert nitrogen gas (N₂) into forms plants can use through nitrogen fixation",
+        "Plants can use atmospheric nitrogen directly",
+        "Animals can use atmospheric nitrogen",
+        "Bacteria produce nitrogen from carbon"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Most organisms cannot use atmospheric nitrogen (N₂). Nitrogen-fixing bacteria convert N₂ into ammonia and other compounds that plants can absorb. This makes nitrogen available to the food web."
+    },
+    {
+      "id": "q99",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.17.11",
+      "themes": [],
+      "text": "Fossil fuels are formed from ancient organisms. How does burning fossil fuels affect the carbon cycle?",
+      "options": [
+        "It releases stored carbon back into the atmosphere as CO₂, increasing atmospheric CO₂ levels",
+        "It removes CO₂ from the atmosphere",
+        "It has no effect on CO₂ levels",
+        "It creates new carbon"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fossil fuels contain carbon that was stored underground for millions of years. Burning them releases this stored carbon as CO₂, increasing atmospheric CO₂ faster than natural processes can remove it."
+    },
+    {
+      "id": "q100",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "High",
+      "standard": "SC.912.L.17.11",
+      "themes": [],
+      "text": "A lake receives excess nutrients from agricultural runoff. This causes an algal bloom, followed by algae death and bacterial decomposition. What effect does this have on the lake?",
+      "options": [
+        "Bacteria consume oxygen during decomposition, potentially creating a \"dead zone\" where fish cannot survive",
+        "Oxygen levels increase, benefiting all organisms",
+        "The ecosystem becomes more diverse",
+        "No effect on other organisms"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Eutrophication: excess nutrients cause algae overgrowth. When algae die, bacteria decompose them using large amounts of oxygen. This can create hypoxic (low oxygen) or anoxic (no oxygen) conditions, killing fish and other aquatic organisms."
+    },
+    {
+      "id": "q101",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.20",
+      "themes": [],
+      "text": "What is an invasive species?",
+      "options": [
+        "A non-native species that spreads rapidly and harms the ecosystem",
+        "A species that is native to an area",
+        "A species that helps the ecosystem",
+        "A type of endangered species"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Invasive species are organisms introduced to a new area where they have no natural predators or competitors. They spread rapidly, outcompeting native species and disrupting ecosystems."
+    },
+    {
+      "id": "q102",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.20",
+      "themes": [],
+      "text": "Which human activity contributes MOST to increased atmospheric carbon dioxide?",
+      "options": [
+        "Burning fossil fuels for energy and transportation",
+        "Planting trees",
+        "Using solar panels",
+        "Recycling"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Burning fossil fuels (coal, oil, natural gas) releases CO₂ that was stored underground for millions of years. This is the largest human contribution to rising atmospheric CO₂ levels."
+    },
+    {
+      "id": "q103",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Low",
+      "standard": "SC.912.L.17.20",
+      "themes": [],
+      "text": "What is biodiversity?",
+      "options": [
+        "The variety of life in an ecosystem or across Earth",
+        "The number of only endangered species",
+        "The size of organisms",
+        "The age of an ecosystem"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Biodiversity refers to the variety of life at all levels: genetic diversity within species, species diversity within ecosystems, and ecosystem diversity across regions. Higher biodiversity generally means healthier ecosystems."
+    },
+    {
+      "id": "q104",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.17.20",
+      "themes": [],
+      "text": "Why are invasive species often successful in new environments?",
+      "options": [
+        "They lack natural predators and competitors in their new environment",
+        "They are always stronger than native species",
+        "Native species welcome them",
+        "They evolve faster"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Invasive species succeed because they escape the predators, parasites, and competitors that controlled their populations in their native range. Without these checks, they can grow unchecked and outcompete native species."
+    },
+    {
+      "id": "q105",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "Moderate",
+      "standard": "SC.912.L.17.20",
+      "themes": [],
+      "text": "Which practice would BEST help conserve biodiversity?",
+      "options": [
+        "Protecting habitats and creating wildlife corridors between fragmented areas",
+        "Removing all predators",
+        "Introducing non-native species",
+        "Building more roads through forests"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Habitat protection and creating connections between habitat fragments help species survive by maintaining large enough populations and allowing migration and genetic exchange."
+    },
+    {
+      "id": "q106",
+      "category": "Organisms, Populations, and Ecosystems",
+      "difficulty": "High",
+      "standard": "SC.912.L.17.20",
+      "themes": [],
+      "text": "A region experiences deforestation, removing 80% of its forest cover. Which long-term effect would be most likely?",
+      "options": [
+        "Reduced biodiversity, disrupted water cycles, increased soil erosion, and altered local climate",
+        "Increased biodiversity as new species move in",
+        "Improved water quality",
+        "No significant environmental changes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Deforestation has cascading effects: loss of habitat reduces biodiversity; without trees, transpiration decreases, altering local rainfall; roots no longer hold soil, causing erosion; and carbon storage is reduced, contributing to climate change."
+    }
+  ]
+}

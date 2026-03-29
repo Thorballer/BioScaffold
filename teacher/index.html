@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology EOC - Teacher Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .card {
+            @apply bg-white rounded-xl shadow-lg p-6;
+        }
+
+        .stat-card {
+            @apply bg-white rounded-lg shadow p-4;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+    <!-- Login Screen — simple client-side check (no server auth needed) -->
+    <div id="loginScreen" class="min-h-screen flex items-center justify-center gradient-bg">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md">
+            <div class="text-center mb-8">
+                <i class="fas fa-chalkboard-teacher text-5xl text-purple-600 mb-4"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Teacher Dashboard</h1>
+                <p class="text-gray-500 mt-2">Biology EOC Adaptive Coach</p>
+            </div>
+            <form id="loginForm" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                    <input type="password" id="password"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                        placeholder="Enter teacher password" required>
+                </div>
+                <button type="submit"
+                    class="w-full gradient-bg text-white py-3 rounded-lg font-semibold hover:opacity-90 transition">
+                    <i class="fas fa-sign-in-alt mr-2"></i>Login
+                </button>
+            </form>
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+                <p class="text-xs text-gray-600"><strong>Default Password:</strong> teacher123</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="hidden">
+        <!-- Header -->
+        <header class="bg-white shadow-sm border-b">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-chalkboard-teacher text-2xl text-purple-600"></i>
+                    <h1 class="text-xl font-bold text-gray-800">Teacher Dashboard</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button onclick="loadDashboard()" class="text-purple-600 hover:text-purple-800" title="Refresh">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <a href="/" class="text-gray-600 hover:text-gray-800" title="Student Quiz">
+                        <i class="fas fa-arrow-left mr-1"></i>Back to Quiz
+                    </a>
+                    <button onclick="logout()" class="text-red-600 hover:text-red-800">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-4 py-8">
+            <!-- Stats Overview -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="stat-card border-l-4 border-purple-500">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-500">Total Sessions</p>
+                            <p id="totalSessions" class="text-2xl font-bold text-gray-800">0</p>
+                        </div>
+                        <i class="fas fa-clipboard-list text-3xl text-purple-200"></i>
+                    </div>
+                </div>
+                <div class="stat-card border-l-4 border-green-500">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-500">Average Score</p>
+                            <p id="avgScore" class="text-2xl font-bold text-gray-800">0%</p>
+                        </div>
+                        <i class="fas fa-chart-line text-3xl text-green-200"></i>
+                    </div>
+                </div>
+                <div class="stat-card border-l-4 border-blue-500">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-500">Students</p>
+                            <p id="totalStudents" class="text-2xl font-bold text-gray-800">0</p>
+                        </div>
+                        <i class="fas fa-users text-3xl text-blue-200"></i>
+                    </div>
+                </div>
+                <div class="stat-card border-l-4 border-orange-500">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-500">Question Bank</p>
+                            <p class="text-2xl font-bold text-gray-800">106</p>
+                        </div>
+                        <i class="fas fa-database text-3xl text-orange-200"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                        <i class="fas fa-book text-purple-600 mr-2"></i>Category Performance
+                    </h3>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                        <i class="fas fa-layer-group text-purple-600 mr-2"></i>Difficulty Breakdown
+                    </h3>
+                    <canvas id="difficultyChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Export Section -->
+            <div class="card mb-8">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                    <i class="fas fa-download text-purple-600 mr-2"></i>Export Data
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <button onclick="exportCSV()"
+                        class="flex items-center justify-center space-x-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition">
+                        <i class="fas fa-file-csv"></i>
+                        <span>Export Grades (CSV)</span>
+                    </button>
+                    <button onclick="exportJSON()"
+                        class="flex items-center justify-center space-x-2 bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Export Full Data (JSON)</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Students Table -->
+            <div class="card mb-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">
+                        <i class="fas fa-user-graduate text-purple-600 mr-2"></i>Students
+                    </h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-4 py-3 text-left text-sm font-semibold text-gray-600">Name</th>
+                                <th class="px-4 py-3 text-left text-sm font-semibold text-gray-600">Sessions</th>
+                                <th class="px-4 py-3 text-left text-sm font-semibold text-gray-600">Avg Score</th>
+                                <th class="px-4 py-3 text-left text-sm font-semibold text-gray-600">Last Session</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentsTable" class="divide-y divide-gray-200"></tbody>
+                    </table>
+                    <p id="noStudents" class="hidden text-center text-gray-400 py-8">No student data yet. Students will
+                        appear after they complete quizzes.</p>
+                </div>
+            </div>
+
+            <!-- Recent Sessions -->
+            <div class="card">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                    <i class="fas fa-history text-purple-600 mr-2"></i>Recent Sessions
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-4 py-3 text-left text-sm font-semibold text-gray-600">Student</th>
+                                <th class="px-4 py-3 text-left text-sm font-semibold text-gray-600">Date</th>
+                                <th class="px-4 py-3 text-left text-sm font-semibold text-gray-600">Score</th>
+                                <th class="px-4 py-3 text-left text-sm font-semibold text-gray-600">Level</th>
+                                <th class="px-4 py-3 text-left text-sm font-semibold text-gray-600">Questions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sessionsTable" class="divide-y divide-gray-200"></tbody>
+                    </table>
+                    <p id="noSessions" class="hidden text-center text-gray-400 py-8">No sessions yet. Grades will appear
+                        as students complete quizzes.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const TEACHER_PASSWORD = 'teacher123';
+        let categoryChart, difficultyChart;
+
+        // Simple client-side auth (password check)
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const password = document.getElementById('password').value;
+            if (password === TEACHER_PASSWORD) {
+                sessionStorage.setItem('teacher_auth', 'true');
+                showDashboard();
+            } else {
+                alert('Invalid password');
+            }
+        });
+
+        // Check if already logged in
+        if (sessionStorage.getItem('teacher_auth') === 'true') {
+            showDashboard();
+        }
+
+        function showDashboard() {
+            document.getElementById('loginScreen').classList.add('hidden');
+            document.getElementById('dashboard').classList.remove('hidden');
+            loadDashboard();
+        }
+
+        function logout() {
+            sessionStorage.removeItem('teacher_auth');
+            document.getElementById('loginScreen').classList.remove('hidden');
+            document.getElementById('dashboard').classList.add('hidden');
+        }
+
+        async function loadDashboard() {
+            await Promise.all([loadAnalytics(), loadStudents(), loadSessions()]);
+        }
+
+        async function loadAnalytics() {
+            try {
+                const res = await fetch('/api/analytics');
+                const data = await res.json();
+
+                document.getElementById('totalSessions').textContent = data.totalSessions;
+                document.getElementById('avgScore').textContent = Math.round(data.avgScore) + '%';
+                document.getElementById('totalStudents').textContent = data.totalStudents;
+
+                // Category Chart
+                const ctx1 = document.getElementById('categoryChart').getContext('2d');
+                if (categoryChart) categoryChart.destroy();
+                categoryChart = new Chart(ctx1, {
+                    type: 'bar',
+                    data: {
+                        labels: Object.keys(data.categoryBreakdown).map(k => k.split(' ').slice(0, 2).join(' ')),
+                        datasets: [{
+                            label: 'Average Score (%)',
+                            data: Object.values(data.categoryBreakdown).map(v => Math.round(v.avg)),
+                            backgroundColor: ['#667eea', '#764ba2', '#f093fb', '#f5576c']
+                        }]
+                    },
+                    options: { responsive: true, scales: { y: { beginAtZero: true, max: 100 } } }
+                });
+
+                // Difficulty Chart
+                const ctx2 = document.getElementById('difficultyChart').getContext('2d');
+                if (difficultyChart) difficultyChart.destroy();
+                const diffData = data.difficultyBreakdown;
+                difficultyChart = new Chart(ctx2, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Low', 'Moderate', 'High'],
+                        datasets: [{
+                            data: [
+                                diffData.Low?.correct || 0,
+                                diffData.Moderate?.correct || 0,
+                                diffData.High?.correct || 0
+                            ],
+                            backgroundColor: ['#22c55e', '#f59e0b', '#ef4444']
+                        }]
+                    },
+                    options: { responsive: true }
+                });
+            } catch (err) {
+                console.error('Failed to load analytics:', err);
+            }
+        }
+
+        async function loadStudents() {
+            try {
+                const res = await fetch('/api/students');
+                const data = await res.json();
+
+                const tbody = document.getElementById('studentsTable');
+                const noData = document.getElementById('noStudents');
+
+                if (data.students.length === 0) {
+                    tbody.innerHTML = '';
+                    noData.classList.remove('hidden');
+                    return;
+                }
+                noData.classList.add('hidden');
+
+                tbody.innerHTML = data.students.map(s => `
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium">${s.name}</td>
+                        <td class="px-4 py-3">${s.sessionCount}</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 rounded ${s.avgScore >= 70 ? 'bg-green-100 text-green-800' : s.avgScore > 0 ? 'bg-red-100 text-red-800' : 'bg-gray-100 text-gray-500'}">${s.avgScore}%</span></td>
+                        <td class="px-4 py-3 text-sm text-gray-500">${s.lastSession ? new Date(s.lastSession).toLocaleDateString() : 'No sessions'}</td>
+                    </tr>
+                `).join('');
+            } catch (err) {
+                console.error('Failed to load students:', err);
+            }
+        }
+
+        async function loadSessions() {
+            try {
+                const res = await fetch('/api/analytics');
+                const data = await res.json();
+                const sessions = data.recentSessions || [];
+
+                const tbody = document.getElementById('sessionsTable');
+                const noData = document.getElementById('noSessions');
+
+                if (sessions.length === 0) {
+                    tbody.innerHTML = '';
+                    noData.classList.remove('hidden');
+                    return;
+                }
+                noData.classList.add('hidden');
+
+                tbody.innerHTML = sessions.map(s => `
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium">${s.studentName || 'Unknown'}</td>
+                        <td class="px-4 py-3 text-sm text-gray-500">${new Date(s.date).toLocaleString()}</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 rounded ${s.score >= 70 ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}">${Math.round(s.score)}%</span></td>
+                        <td class="px-4 py-3">${s.level || '-'}</td>
+                        <td class="px-4 py-3">${s.questionsAnswered || 60}</td>
+                    </tr>
+                `).join('');
+            } catch (err) {
+                console.error('Failed to load sessions:', err);
+            }
+        }
+
+        function exportCSV() {
+            window.location.href = '/api/grades?format=csv';
+        }
+
+        function exportJSON() {
+            window.location.href = '/api/grades';
+        }
+
+        // Auto-refresh every 30 seconds
+        setInterval(() => {
+            if (sessionStorage.getItem('teacher_auth') === 'true') loadDashboard();
+        }, 30000);
+    </script>
+</body>
+
+</html>

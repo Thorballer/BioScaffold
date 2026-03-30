@@ -117,7 +117,10 @@ const TestView: React.FC<TestViewProps> = ({ testState, getNextQuestion, onAnswe
         </div>
 
         <div className="mb-8">
-          <QuestionVisual text={currentQuestion?.text || ''} />
+          <QuestionVisual 
+            text={currentQuestion?.text || ''} 
+            graphData={currentQuestion?.graphData}
+          />
         </div>
 
         <div className="space-y-4">

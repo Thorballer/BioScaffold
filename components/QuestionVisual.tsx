@@ -1,16 +1,16 @@
 import React from 'react';
+import DataGraph from './DataGraph';
 
 interface QuestionVisualProps {
   text: string;
+  graphData?: any;
 }
 
 /**
  * Parses question text and renders appropriate visualizations
- * for [GRAPH], [TABLE], and [EXPERIMENT] sections
  */
-const QuestionVisual: React.FC<QuestionVisualProps> = ({ text }) => {
-  // Parse the text to extract visual sections
-  const parts = parseQuestionText(text);
+const QuestionVisual: React.FC<QuestionVisualProps> = ({ text, graphData }) => {
+  const parts = parseQuestionText(text, graphData);
   
   return (
     <div className="space-y-4">
@@ -53,11 +53,18 @@ const QuestionVisual: React.FC<QuestionVisualProps> = ({ text }) => {
           {part.type === 'graph' && (
             <div className="my-4">
               <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                {part.title && (
+                {part.title && !part.graphData?.title && (
                   <p className="text-sm font-bold text-slate-600 mb-3">{part.title}</p>
                 )}
                 <div className="bg-white rounded p-4 border border-slate-100">
-                  {renderGraph(part)}
+                  <DataGraph
+                    type={part.graphData?.type || 'line'}
+                    title={part.graphData?.title || part.title}
+                    data={part.graphData?.data || part.inlineData}
+                    xAxisLabel={part.graphData?.xAxisLabel}
+                    yAxisLabel={part.graphData?.yAxisLabel}
+                    showTrend={part.graphData?.showTrend}
+                  />
                 </div>
               </div>
             </div>
@@ -89,60 +96,110 @@ const QuestionVisual: React.FC<QuestionVisualProps> = ({ text }) => {
 /**
  * Parse question text into structured parts
  */
-function parseQuestionText(text: string): any[] {
+function parseQuestionText(text: string, providedGraphData?: any): any[] {
   const parts: any[] = [];
+  const lines = text.split('\n');
+  let currentText = '';
+  let tableLines: string[] = [];
+  let inTable = false;
+  let graphPoints: { label: string; value: number }[] = [];
+  let graphTitle = '';
   
-  // Handle markdown-style tables
-  if (text.includes('|') && text.includes('---')) {
-    const lines = text.split('\n');
-    let currentText = '';
-    let tableLines: string[] = [];
-    let inTable = false;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
     
-    for (const line of lines) {
-      const trimmed = line.trim();
+    // Skip separator lines in tables
+    if (inTable && trimmed.startsWith('|') && trimmed.includes('---')) {
+      continue;
+    }
+    
+    // Handle table rows
+    if (trimmed.startsWith('|') && trimmed.includes('|') && !trimmed.includes('---')) {
+      if (!inTable) {
+        if (currentText.trim()) parts.push({ type: 'text', content: currentText.trim() });
+        currentText = '';
+        inTable = true;
+      }
+      tableLines.push(line);
+      continue;
+    }
+    
+    // End table if we hit non-table content
+    if (inTable && !trimmed.startsWith('|')) {
+      if (tableLines.length > 0) {
+        parts.push({ type: 'table', ...parseMarkdownTable(tableLines) });
+        tableLines = [];
+      }
+      inTable = false;
+    }
+    
+    // Handle inline graph data: "- Label: value" pattern
+    const graphMatch = trimmed.match(/^-\s*(.+?):\s*(\d+)/);
+    if (graphMatch) {
+      const label = graphMatch[1].trim();
+      const value = parseInt(graphMatch[2]);
       
-      // Check for separator line FIRST (before adding to tableLines)
-      if (inTable && trimmed.startsWith('|') && trimmed.includes('---')) {
-        // This is the separator line, skip it
+      // Check if this is graph-worthy data (time series, percentages, etc.)
+      const isGraphData = 
+        label.includes('Year') || 
+        label.includes('Gen') || 
+        label.match(/\d{4}/) || // Years like 1900, 1950
+        value <= 100 && trimmed.includes('%') ||
+        label.match(/^Day\s*\d+/);
+      
+      if (isGraphData) {
+        // Extract graph title from 📊 marker
+        if (currentText.includes('📊')) {
+          const titleMatch = currentText.match(/📊\s*(.+?):/);
+          if (titleMatch) graphTitle = titleMatch[1].trim();
+          currentText = currentText.replace(/📊[^:]*:/, '').trim();
+        }
+        
+        graphPoints.push({ label: label.replace(/^\d+\s*/, '').replace(/\s*\d+$/, ''), value });
         continue;
       }
-      
-      // Check if line is a table row
-      if (trimmed.startsWith('|') && trimmed.includes('|')) {
-        if (!inTable) {
-          if (currentText.trim()) {
-            parts.push({ type: 'text', content: currentText.trim() });
-          }
-          currentText = '';
-          inTable = true;
-        }
-        tableLines.push(line);
-      } else if (inTable && !trimmed.startsWith('|')) {
-        // End of table (empty line or non-table text)
-        if (tableLines.length > 0) {
-          const tableData = parseMarkdownTable(tableLines);
-          parts.push({ type: 'table', ...tableData });
-        }
-        tableLines = [];
-        inTable = false;
-        currentText += line + '\n';
-      } else {
-        currentText += line + '\n';
-      }
     }
     
-    // Handle remaining content
-    if (inTable && tableLines.length > 0) {
-      const tableData = parseMarkdownTable(tableLines);
-      parts.push({ type: 'table', ...tableData });
+    // If we collected graph points and hit non-graph content, emit the graph
+    if (graphPoints.length > 0 && !trimmed.startsWith('-')) {
+      parts.push({
+        type: 'graph',
+        title: graphTitle,
+        inlineData: graphPoints,
+        graphData: providedGraphData || {
+          type: 'line',
+          title: graphTitle,
+          data: graphPoints,
+          showTrend: graphPoints.length > 1 && graphPoints[graphPoints.length - 1].value > graphPoints[0].value
+        }
+      });
+      graphPoints = [];
+      graphTitle = '';
     }
-    if (currentText.trim()) {
-      parts.push({ type: 'text', content: currentText.trim() });
-    }
-  } else {
-    // No tables, just text
-    parts.push({ type: 'text', content: text });
+    
+    currentText += line + '\n';
+  }
+  
+  // Handle remaining content
+  if (tableLines.length > 0) {
+    parts.push({ type: 'table', ...parseMarkdownTable(tableLines) });
+  }
+  if (graphPoints.length > 0) {
+    parts.push({
+      type: 'graph',
+      title: graphTitle,
+      inlineData: graphPoints,
+      graphData: providedGraphData || {
+        type: 'line',
+        title: graphTitle,
+        data: graphPoints,
+        showTrend: true
+      }
+    });
+  }
+  if (currentText.trim()) {
+    parts.push({ type: 'text', content: currentText.trim() });
   }
   
   return parts;
@@ -155,98 +212,17 @@ function parseMarkdownTable(lines: string[]): { headers: string[], rows: string[
   const headers: string[] = [];
   const rows: string[][] = [];
   
-  // First line is headers
   if (lines.length > 0) {
-    const headerLine = lines[0].trim();
-    const cells = headerLine.split('|').filter(c => c.trim());
+    const cells = lines[0].split('|').filter(c => c.trim());
     headers.push(...cells.map(c => c.trim()));
   }
   
-  // Remaining lines are data rows
   for (let i = 1; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (line.startsWith('|---') || !line.startsWith('|')) continue;
-    
-    const cells = line.split('|').filter(c => c.trim());
-    rows.push(cells.map(c => c.trim()));
+    const cells = lines[i].split('|').filter(c => c.trim());
+    if (cells.length > 0) rows.push(cells.map(c => c.trim()));
   }
   
   return { headers, rows };
-}
-
-/**
- * Render a graph based on parsed data
- */
-function renderGraph(part: any): React.ReactNode {
-  // For now, render a simple SVG visualization
-  // The graph data should be embedded in the question
-  
-  // Default bar chart for generic graphs
-  if (part.bars) {
-    return (
-      <svg viewBox="0 0 300 150" className="w-full max-w-md">
-        <text x="150" y="10" textAnchor="middle" className="fill-slate-600 text-xs font-semibold">
-          {part.title || 'Data Visualization'}
-        </text>
-        {part.bars.map((bar: any, i: number) => (
-          <g key={i}>
-            <rect
-              x={40 + i * 50}
-              y={130 - bar.height}
-              width="40"
-              height={bar.height}
-              fill="#6366f1"
-              rx="4"
-            />
-            <text x={60 + i * 50} y="145" textAnchor="middle" className="fill-slate-500 text-xs">
-              {bar.label}
-            </text>
-            <text x={60 + i * 50} y={125 - bar.height} textAnchor="middle" className="fill-slate-700 text-xs font-semibold">
-              {bar.value}
-            </text>
-          </g>
-        ))}
-      </svg>
-    );
-  }
-  
-  // Line graph for trends
-  if (part.points) {
-    const maxVal = Math.max(...part.points.map((p: any) => p.y));
-    const xScale = 280 / (part.points.length - 1);
-    const yScale = 100 / maxVal;
-    
-    const pathD = part.points.map((p: any, i: number) => 
-      `${i === 0 ? 'M' : 'L'} ${20 + i * xScale} ${130 - p.y * yScale}`
-    ).join(' ');
-    
-    return (
-      <svg viewBox="0 0 300 150" className="w-full max-w-md">
-        <text x="150" y="10" textAnchor="middle" className="fill-slate-600 text-xs font-semibold">
-          {part.title || 'Trend Data'}
-        </text>
-        <path d={pathD} stroke="#6366f1" strokeWidth="2" fill="none" />
-        {part.points.map((p: any, i: number) => (
-          <g key={i}>
-            <circle cx={20 + i * xScale} cy={130 - p.y * yScale} r="4" fill="#6366f1" />
-            <text x={20 + i * xScale} y="145" textAnchor="middle" className="fill-slate-500 text-xs">
-              {p.label}
-            </text>
-          </g>
-        ))}
-      </svg>
-    );
-  }
-  
-  // Generic placeholder if no specific graph data
-  return (
-    <div className="flex items-center justify-center h-32 text-slate-500">
-      <div className="text-center">
-        <div className="text-4xl mb-2">📊</div>
-        <p className="text-xs">See data description below</p>
-      </div>
-    </div>
-  );
 }
 
 export default QuestionVisual;

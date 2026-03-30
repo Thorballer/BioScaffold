@@ -1,5 +1,26 @@
 {
+    "functions": {
+        "api/**/*.js": {
+            "runtime": "nodejs25.x"
+        }
+    },
     "rewrites": [
+        {
+            "source": "/api/sessions/:id/question",
+            "destination": "/api/sessions/[id]/question"
+        },
+        {
+            "source": "/api/sessions/:id/answer",
+            "destination": "/api/sessions/[id]/answer"
+        },
+        {
+            "source": "/api/sessions/:id/results",
+            "destination": "/api/sessions/[id]/results"
+        },
+        {
+            "source": "/api/bank/info",
+            "destination": "/api/bank/info"
+        },
         {
             "source": "/api/(.*)",
             "destination": "/api/$1"

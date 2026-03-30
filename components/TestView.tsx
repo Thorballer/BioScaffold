@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Question, TestState, StandardCategory } from '../types';
+import QuestionVisual from './QuestionVisual';
 
 interface TestViewProps {
   testState: TestState;
@@ -115,9 +116,9 @@ const TestView: React.FC<TestViewProps> = ({ testState, getNextQuestion, onAnswe
           <span className="text-slate-400 text-xs font-mono">{currentQuestion?.standard}</span>
         </div>
 
-        <h2 className="text-xl text-slate-800 font-semibold leading-relaxed mb-8">
-          {currentQuestion?.text}
-        </h2>
+        <div className="mb-8">
+          <QuestionVisual text={currentQuestion?.text || ''} />
+        </div>
 
         <div className="space-y-4">
           {currentQuestion?.options.map((option, idx) => {

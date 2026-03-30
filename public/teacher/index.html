@@ -14,11 +14,17 @@
         }
 
         .card {
-            @apply bg-white rounded-xl shadow-lg p-6;
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
         }
 
         .stat-card {
-            @apply bg-white rounded-lg shadow p-4;
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
         }
     </style>
 </head>
@@ -107,7 +113,7 @@
                     <div class="flex items-center justify-between">
                         <div>
                             <p class="text-sm text-gray-500">Question Bank</p>
-                            <p class="text-2xl font-bold text-gray-800">106</p>
+                            <p id="questionBank" class="text-2xl font-bold text-gray-800">0</p>
                         </div>
                         <i class="fas fa-database text-3xl text-orange-200"></i>
                     </div>
@@ -232,7 +238,18 @@
         }
 
         async function loadDashboard() {
-            await Promise.all([loadAnalytics(), loadStudents(), loadSessions()]);
+            await Promise.all([loadAnalytics(), loadStudents(), loadSessions(), loadQuestionBank()]);
+        }
+
+        async function loadQuestionBank() {
+            try {
+                const res = await fetch('/api/bank/info');
+                const data = await res.json();
+                document.getElementById('questionBank').textContent = data.totalQuestions;
+            } catch (err) {
+                console.error('Failed to load question bank info:', err);
+                document.getElementById('questionBank').textContent = '—';
+            }
         }
 
         async function loadAnalytics() {

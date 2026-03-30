@@ -1,5 +1,15 @@
 // Shared library for Vercel API
-import questionBank from '../../data/question-bank.json' with { type: 'json' };
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Load question bank
+const questionBank = JSON.parse(
+    readFileSync(join(__dirname, '../../data/question-bank.json'), 'utf-8')
+);
 
 // In-memory session store (resets on each cold start)
 // For production, use Vercel KV or Blob storage

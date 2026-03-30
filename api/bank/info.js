@@ -1,4 +1,13 @@
-import questionBank from '../../data/question-bank.json' with { type: 'json' };
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const questionBank = JSON.parse(
+    readFileSync(join(__dirname, '../../data/question-bank.json'), 'utf-8')
+);
 
 export default async function handler(req, res) {
     // CORS

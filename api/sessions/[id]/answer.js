@@ -1,4 +1,4 @@
-import { getSession, submitAnswer, getSessionResults } from '../../../api/_lib/sessionStore.js';
+import { getSession, submitAnswer, getSessionResults } from '../../_lib/sessionStore.js';
 
 export default async function handler(req, res) {
     // CORS

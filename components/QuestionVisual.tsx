@@ -93,14 +93,23 @@ function parseQuestionText(text: string): any[] {
   const parts: any[] = [];
   
   // Handle markdown-style tables
-  if (text.includes('|') && text.includes('---|')) {
+  if (text.includes('|') && text.includes('---')) {
     const lines = text.split('\n');
     let currentText = '';
     let tableLines: string[] = [];
     let inTable = false;
     
     for (const line of lines) {
-      if (line.trim().startsWith('|') && line.includes('|')) {
+      const trimmed = line.trim();
+      
+      // Check for separator line FIRST (before adding to tableLines)
+      if (inTable && trimmed.startsWith('|') && trimmed.includes('---')) {
+        // This is the separator line, skip it
+        continue;
+      }
+      
+      // Check if line is a table row
+      if (trimmed.startsWith('|') && trimmed.includes('|')) {
         if (!inTable) {
           if (currentText.trim()) {
             parts.push({ type: 'text', content: currentText.trim() });
@@ -109,11 +118,8 @@ function parseQuestionText(text: string): any[] {
           inTable = true;
         }
         tableLines.push(line);
-      } else if (inTable && line.trim().startsWith('|---')) {
-        // This is the separator line, skip it
-        continue;
-      } else if (inTable && !line.trim().startsWith('|')) {
-        // End of table
+      } else if (inTable && !trimmed.startsWith('|')) {
+        // End of table (empty line or non-table text)
         if (tableLines.length > 0) {
           const tableData = parseMarkdownTable(tableLines);
           parts.push({ type: 'table', ...tableData });

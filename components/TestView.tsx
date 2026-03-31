@@ -42,9 +42,10 @@ const TestView: React.FC<TestViewProps> = ({ testState, getNextQuestion, onAnswe
     }
   }, [testState.currentQuestionIndex]);
 
-  // Backup: clear selection whenever currentQuestion changes
+  // Backup: clear selection AND feedback whenever currentQuestion changes
   useEffect(() => {
     setSelectedOption(null);
+    setFeedback(null);
   }, [currentQuestion?.id]);
 
   const handleSubmit = () => {
@@ -52,25 +53,29 @@ const TestView: React.FC<TestViewProps> = ({ testState, getNextQuestion, onAnswe
 
     const isCorrect = selectedOption === currentQuestion.correctAnswer;
 
-    // Show feedback
+    // Show feedback FIRST (before calling onAnswer which triggers next question load)
     setFeedback({
       isCorrect,
       explanation: currentQuestion.explanation,
       correctAnswer: currentQuestion.correctAnswer,
     });
 
-    // Update local state via parent
-    onAnswer(currentQuestion, selectedOption);
-
-    // If finished, trigger finish flow
-    if (testState.currentQuestionIndex + 1 >= testState.totalQuestions) {
-      setTimeout(() => {
-        onFinish();
-      }, 2000);
-    }
+    // Wait before calling onAnswer (which changes question index)
+    // This ensures feedback is shown for the correct question
+    setTimeout(() => {
+      onAnswer(currentQuestion, selectedOption!);
+      
+      // If finished, trigger finish flow after showing feedback
+      if (testState.currentQuestionIndex + 1 >= testState.totalQuestions) {
+        setTimeout(() => {
+          onFinish();
+        }, 1500);
+      }
+    }, 100);
   };
 
   const handleNext = () => {
+    // Clear ALL state before moving to next question
     setSelectedOption(null);
     setFeedback(null);
     // The useEffect will fetch the next question when currentQuestionIndex changes

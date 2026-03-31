@@ -69,7 +69,7 @@ const App: React.FC = () => {
 
     // POST grade to server for teacher dashboard (fire-and-forget)
     try {
-      await fetch('/api/grades', {
+      const res = await fetch('/api/grades', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -86,8 +86,11 @@ const App: React.FC = () => {
           aiReport: result.aiReport,
         }),
       });
+      if (!res.ok) {
+        const errData = await res.json();
+        console.error('Grade save failed:', errData.error);
+      }
     } catch (err) {
-      // Grade saving is best-effort — quiz still works without it
       console.warn('Could not save grade to server:', err);
     }
   };

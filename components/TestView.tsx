@@ -21,6 +21,7 @@ const TestView: React.FC<TestViewProps> = ({ testState, getNextQuestion, onAnswe
     setLoading(true);
     setError(null);
     setFeedback(null);
+    setSelectedOption(null); // ALWAYS clear selection when loading new question
     try {
       const result = getNextQuestion();
       if (result) {
@@ -40,6 +41,11 @@ const TestView: React.FC<TestViewProps> = ({ testState, getNextQuestion, onAnswe
       fetchNextQuestion();
     }
   }, [testState.currentQuestionIndex]);
+
+  // Backup: clear selection whenever currentQuestion changes
+  useEffect(() => {
+    setSelectedOption(null);
+  }, [currentQuestion?.id]);
 
   const handleSubmit = () => {
     if (selectedOption === null || !currentQuestion) return;
@@ -125,17 +131,21 @@ const TestView: React.FC<TestViewProps> = ({ testState, getNextQuestion, onAnswe
 
         <div className="space-y-4">
           {currentQuestion?.options.map((option, idx) => {
-            let btnClass = 'border-slate-100 hover:border-indigo-200 hover:bg-slate-50';
+            // Base: plain, unselected
+            // Hover: subtle shadow lift (NOT color change that looks like selection)
+            // Selected: indigo border + background
+            // Feedback: green for correct, red for wrong
+            let btnClass = 'border-slate-200 hover:shadow-md hover:border-slate-300 transition-shadow';
             if (feedback) {
               if (idx === feedback.correctAnswer) {
                 btnClass = 'border-green-500 bg-green-50';
               } else if (idx === selectedOption && !feedback.isCorrect) {
                 btnClass = 'border-red-500 bg-red-50';
               } else {
-                btnClass = 'border-slate-100 opacity-50';
+                btnClass = 'border-slate-200 opacity-50';
               }
             } else if (selectedOption === idx) {
-              btnClass = 'border-indigo-600 bg-indigo-50';
+              btnClass = 'border-indigo-600 bg-indigo-50 ring-2 ring-indigo-200';
             }
 
             return (

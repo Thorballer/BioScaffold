@@ -1,5 +1,6 @@
 
 import React, { useState, useRef } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { TestState, Question, StandardCategory } from './types';
 import { QuizEngine, FinishResult } from './services/quizEngine';
 import LandingView from './components/LandingView';
@@ -182,6 +183,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </footer>
+      <SpeedInsights />
     </div>
   );
 };
